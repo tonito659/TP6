@@ -3,16 +3,18 @@ package com.antoine;
 import java.util.Scanner;
 
 
-public class Main {
+@SuppressWarnings("unused")
+class Main {
 
 
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
 	// write your code here
         Eratosthene.premiers();
     }
 
-    public static boolean isPalindrome(String phrase){
+    private static boolean isPalindrome(String phrase){
         // cette fonction détermine si le mot en entrée esst un palindrome !
         boolean pal = true;
         for (int i=0; i < phrase.length()-1; i++){
