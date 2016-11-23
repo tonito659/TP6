@@ -10,10 +10,10 @@ public class Eratosthene {
         tableau[0]=0;
         tableau[1]=0;
         int j;
-        for (int i = 2; (i < tableau.length); i++) {
-            for (j=2; (j < tableau.length); j++){
-                if (tableau[j] % (i) == 0) {
-                    tableau[j] = 0;
+        for (int i = 3; (i < tableau.length); i++) {
+            for (j = i+1; (j < tableau.length); j++) {
+                if (j % i == 0) {
+                    tableau[i] = 0;
                 }
             }
         }
