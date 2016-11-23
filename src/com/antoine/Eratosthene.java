@@ -3,9 +3,6 @@ package com.antoine;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Created by Antoine on 18/11/2016.
- */
 public class Eratosthene {
 
 
@@ -15,7 +12,7 @@ public class Eratosthene {
         int j;
         for (int i = 2; (i < tableau.length); i++) {
             for (j=2; (j < tableau.length); j++){
-                if (j % (i) == 0) {
+                if (tableau[j] % (i) == 0) {
                     tableau[j] = 0;
                 }
             }
@@ -25,7 +22,9 @@ public class Eratosthene {
     public static int[] genTableau(int taille) {
         //generation du tableau rempli avec des 1
         int[] tableau = new int[taille+1];
-        Arrays.fill(tableau, 1);
+        for (int i=0; i<tableau.length; i++){
+            tableau[i] = i;
+        }
         return tableau;
     }
 
