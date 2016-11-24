@@ -3,12 +3,12 @@ package com.antoine;
 import java.util.Scanner;
 
 
-@SuppressWarnings("unused")
+
 class Main {
 
 
 
-    @SuppressWarnings("unused")
+
     public static void main(String[] args) {
 	// write your code here
         Eratosthene.premiers();

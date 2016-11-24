@@ -2,7 +2,7 @@ package com.antoine;
 
 
 
-class tri {
+class Tri {
 
 }
 
