@@ -6,12 +6,13 @@ import java.util.Scanner;
 
 class Main {
 
-
+    static int [] tableau = {8,6,5,69,6,2,53,1,53,6,28,6,3,3,56,2,8,3};
 
 
     public static void main(String[] args) {
 	// write your code here
         Eratosthene.premiers();
+        Tri.triRapide(tableau);
     }
 
     private static boolean isPalindrome(String phrase){
